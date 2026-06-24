@@ -82,6 +82,15 @@
   .offer .desc b{color:var(--ink)}
   .offer .only{margin-top:12px;font-size:13px;font-weight:700;color:var(--accent);
     border-top:1px dashed var(--line);padding-top:12px}
+  .offer .incl{margin-top:16px;border-top:1px solid var(--line);padding-top:16px}
+  .offer .incl-label{font-size:12px;letter-spacing:1.5px;font-weight:800;color:var(--muted);margin-bottom:12px}
+  .offer .incl ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px 18px}
+  .offer .incl li{position:relative;padding-left:24px;font-size:14px;color:var(--ink);line-height:1.5}
+  .offer .incl li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:900}
+  .offer .outcome{margin-top:18px;background:var(--accent);color:#eef2f7;border-radius:8px;
+    padding:14px 18px;font-size:14.5px;text-align:center}
+  .offer .outcome b{color:#f0cf86}
+  @media(max-width:640px){.offer .incl ul{grid-template-columns:1fr}}
 
   /* NEXT (예고) */
   .next{margin-top:16px;border:1px dashed #c9c3b6;border-radius:10px;padding:20px 24px;background:#f6f3ec}
@@ -205,9 +214,21 @@
     <div class="offer">
       <div class="row">
         <div class="ti">진단 + 방향 컨설팅 <small>1회 · 2시간</small></div>
-        <div class="pr"><span class="was">50만 원</span><span class="now">30만 원</span></div>
+        <div class="pr"><span class="was">정가 50만 원</span><span class="now">30만 원</span></div>
       </div>
-      <div class="desc"><b>지인 할인 30만 원.</b> 채널 진단 + 개선 우선순위 + 방향 설정.</div>
+      <div class="desc"><b>지인 소개가 30만 원.</b></div>
+      <div class="incl">
+        <div class="incl-label">포함 내용</div>
+        <ul>
+          <li>네이버 플레이스 진단</li>
+          <li>지역 키워드 우선순위 정리</li>
+          <li>블로그 콘텐츠 방향 제안</li>
+          <li>대표사진·매물사진 구성 점검</li>
+          <li>광고비 사용 전 개선 포인트 정리</li>
+          <li>실행 우선순위 로드맵 제공</li>
+        </ul>
+      </div>
+      <div class="outcome">상담 후엔, <b>“무엇부터 해야 할지”가 정리됩니다.</b></div>
     </div>
 
     <div class="sign">
